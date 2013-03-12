@@ -2,6 +2,7 @@
   (:use clojure.test
         clojure-hello-world.core))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest hello_with_args
+  (testing "Test an string argument."
+    (is (= (hello "AAA") "Hello, AAA"))))
+
